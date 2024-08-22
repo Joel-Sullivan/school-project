@@ -56,24 +56,69 @@ html {
   --footer-text-color: #e5e7eb;
 }
 
-/* Colorful Theme */
-:root.colorful-theme {
-  --bg-color: radial-gradient(#ff9a9e, #fad0c4);
-  --text-color: #2b2b2b;
-  --header-bg-color: #ff6f61;
-  --header-text-color: white;
-  --sidebar-bg-color: #ff6f61;
-  --sidebar-text-color: white;
-  --sidebar-active-bg-color: #ffa07a;
-  --sidebar-active-text-color: #2b2b2b;
-  --sidebar-hover-bg-color: #ff8c94;
-  --sidebar-hover-text-color: white;
-  --card-bg-color: #ffb6c1;
-  --card-border-color: #2b2b2b;
-  --profile-img-border-color: #ffb6c1;
-  --footer-bg-color: #ff6f61;
-  --footer-text-color: white;
+/* Stephanie's Theme */
+:root.stephanie-theme {
+  --bg-color: radial-gradient(#ff61e2, #ffb6ff); /* Stephanie's costume colors */
+  --head-font: "Bungee", sans-serif;
+  --body-font: "Fira Sans", sans-serif;
+  --pagehead-color: #e13cb3; /* Matching header color */
+  --text-color: #2b2b2b; /* Darker text color for contrast */
+  --header-bg-color: #ff61e3; /* Stephanie's costume color */
+  --header-text-color: #ffffff; /* White text for contrast */
+  --sidebar-bg-color: #f557dd; /* Stephanie's costume color */
+  --sidebar-text-color: #ffcbf8; /* White text for readability */
+  --sidebar-active-bg-color: #ff88fb; /* Lightened version for active items */
+  --sidebar-active-text-color: #2b2b2b; /* Dark text for contrast */
+  --sidebar-hover-bg-color: #ff8cec; /* Slightly darker for hover */
+  --sidebar-hover-text-color: #ffffff; /* White text for readability */
+  --card-bg-color: #ffb6fe; /* Stephanie's lighter costume color */
+  --card-border-color: #2b2b2b; /* Dark border for contrast */
+  --card-border-radius: 15px;
+  --profile-img-border-color: #ff3bf0; /* Matching card background */
 }
+
+/*Sportacus*/
+:root.sportacus-theme {
+  --bg-color: radial-gradient(#0096d6, #cce7ff); /* Sportacus's costume colors */
+  --head-font: "Bungee", sans-serif;
+  --body-font: "Fira Sans", sans-serif;
+  --pagehead-color: #0096d6; /* Sportacus's main color */
+  --text-color: #ffffff; /* White text for readability */
+  --header-bg-color: #0096d6; /* Sportacus's main color */
+  --header-text-color: #ffffff; /* White text for contrast */
+  --sidebar-bg-color: #0096d6; /* Sportacus's main color */
+  --sidebar-text-color: #ffffff; /* White text for readability */
+  --sidebar-active-bg-color: #00bfff; /* Light blue for active items */
+  --sidebar-active-text-color: #ffffff; /* White text for contrast */
+  --sidebar-hover-bg-color: #007acc; /* Darker blue for hover */
+  --sidebar-hover-text-color: #ffffff; /* White text for readability */
+  --card-bg-color: #cce7ff; /* Light blue background */
+  --card-border-color: #0096d6; /* Matching border color */
+  --card-border-radius: 15px;
+  --profile-img-border-color: #0096d6; /* Matching card border */
+}
+
+/*Robbie*/
+:root.robbie-rotten-theme {
+  --bg-color: radial-gradient(#3b0a45, #8a2b6f); /* Robbie's costume colors */
+  --head-font: "Bungee", sans-serif;
+  --body-font: "Fira Sans", sans-serif;
+  --pagehead-color: #3b0a45; /* Robbie's dark color */
+  --text-color: #ffffff; /* White text for readability */
+  --header-bg-color: #3b0a45; /* Dark purple for header */
+  --header-text-color: #ffffff; /* White text for contrast */
+  --sidebar-bg-color: #3b0a45; /* Dark purple for sidebar */
+  --sidebar-text-color: #ffffff; /* White text for readability */
+  --sidebar-active-bg-color: #8a2b6f; /* Lightened purple for active items */
+  --sidebar-active-text-color: #ffffff; /* White text for contrast */
+  --sidebar-hover-bg-color: #5e1a62; /* Slightly lighter purple for hover */
+  --sidebar-hover-text-color: #ffffff; /* White text for readability */
+  --card-bg-color: #8a2b6f; /* Light purple background */
+  --card-border-color: #3b0a45; /* Dark border for contrast */
+  --card-border-radius: 15px;
+  --profile-img-border-color: #8a2b6f; /* Matching card background */
+}
+
 
 /*--------STYLES--------*/
 body {
