@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 
 /* || RESET */
 * {
@@ -17,7 +18,7 @@ html {
 :root {
   /* Default Theme */
   --bg-color: radial-gradient(whitesmoke, #475569);
-  --font-family: "Nunito", sans-serif;
+  --font-family: "Bungee", sans-serif;
   --text-color: #000;
   --header-bg-color: #1e293b;
   --header-text-color: whitesmoke;
