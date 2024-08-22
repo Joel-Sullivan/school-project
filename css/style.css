@@ -34,6 +34,7 @@ html {
   --card-border-color: #000;
   --card-border-radius: 15px;
   --profile-img-border-color: #d4d400;
+  background-color: var(--bg-color);
 }
 
 /* Dark Theme */
@@ -54,6 +55,7 @@ html {
   --profile-img-border-color: #64748b;
   --footer-bg-color: #0f172a;
   --footer-text-color: #e5e7eb;
+    background-color: var(--bg-color);
 }
 
 /* Stephanie's Theme */
@@ -76,10 +78,12 @@ html {
   --card-border-color: #2b2b2b; /* Dark border for contrast */
   --card-border-radius: 15px;
   --profile-img-border-color: #ff3bf0; /* Matching card background */
+  background-image: var(--bg-image);
 }
 
 /*Sportacus*/
 :root.sportacus-theme {
+  --bg-image: url(../images/backgrounds/sportacus-bg.jpg);
   --bg-color: radial-gradient(#0096d6, #cce7ff); /* Sportacus's costume colors */
   --head-font: "Bungee", sans-serif;
   --body-font: "Fira Sans", sans-serif;
@@ -97,10 +101,12 @@ html {
   --card-border-color: #0096d6; /* Matching border color */
   --card-border-radius: 15px;
   --profile-img-border-color: #0096d6; /* Matching card border */
+  background-image: var(--bg-image);
 }
 
 /*Robbie*/
 :root.robbie-rotten-theme {
+  --bg-image: url(../images/backgrounds/robbie-bg.jpg);
   --bg-color: radial-gradient(#3b0a45, #8a2b6f); /* Robbie's costume colors */
   --head-font: "Bungee", sans-serif;
   --body-font: "Fira Sans", sans-serif;
@@ -118,13 +124,12 @@ html {
   --card-border-color: #3b0a45; /* Dark border for contrast */
   --card-border-radius: 15px;
   --profile-img-border-color: #8a2b6f; /* Matching card background */
+  background-image: var(--bg-image);
 }
 
 
 /*--------STYLES--------*/
 body {
-  background-image: var(--bg-image);
-  background-color: var(--bg-color);
   font-family: var(--body-font);
   min-height: 100vh;
   background-color: #000;
