@@ -34,7 +34,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
   //Themes
     function applyTheme(themeName) {
-        document.documentElement.className = themeName;
+          document.documentElement.className = themeName;
+            if (themeName === 'stephanie-theme' || themeName === 'sportacus-theme' || themeName === 'robbie-rotten-theme') {
+          document.body.style.backgroundImage = 'var(--bg-image)';
+          document.body.style.backgroundColor = ''; // Clear background color
+        } else {
+          document.body.style.backgroundColor = 'var(--bg-color)';
+          document.body.style.backgroundImage = ''; // Clear background image
+        }
+      }
     }
 
     function saveTheme(themeName) {
