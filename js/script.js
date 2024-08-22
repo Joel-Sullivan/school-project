@@ -32,14 +32,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
   loadSidebar(); // Load sidebar when DOM content is loaded
 
-  // Theme Toggle Function
-  function toggleTheme() {
-      document.documentElement.classList.toggle('dark-theme');
-  }
+  //Themes
+    function applyTheme(themeName) {
+        document.documentElement.className = themeName;
+    }
 
-  // Attach the toggleTheme function to the button
-  var themeToggleButton = document.getElementById('theme-toggle');
-  if (themeToggleButton) {
-    themeToggleButton.addEventListener('click', toggleTheme);
-  }
+    function saveTheme(themeName) {
+        localStorage.setItem('theme', themeName);
+    }
+
+    function loadTheme() {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            applyTheme(savedTheme);
+        }
+    }
+
+    loadTheme();
+
+    const themeButtons = document.querySelectorAll('[data-theme]');
+    themeButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const selectedTheme = this.getAttribute('data-theme');
+            applyTheme(selectedTheme);
+            saveTheme(selectedTheme);
+        });
+    });
 });
