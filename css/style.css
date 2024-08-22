@@ -58,7 +58,7 @@ html {
 
 /* Stephanie's Theme */
 :root.stephanie-theme {
-  --bg-image: url(../images/stephanie-bg.jpg); /* Stephanie's costume colors */
+  --bg-image: url(../images/backgrounds/stephanie-bg.jpg); /* Stephanie's costume colors */
   --bg-color: radial-gradient(#ff61e2, #ffb6ff);
   --head-font: "Bungee", sans-serif;
   --body-font: "Fira Sans", sans-serif;
