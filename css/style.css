@@ -318,6 +318,12 @@ footer {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  img.logo {
+    display: none;
+  }
+}
+
 /* || XL  */
 @media screen and (min-width: 1200px) {
   .card {
