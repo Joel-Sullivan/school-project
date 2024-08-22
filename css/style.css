@@ -90,29 +90,29 @@ main {
   font: 1.5rem var(--body-font)
 }
 
-h1.mainhead {
+.mainhead {
   display: inline;
+  padding-top: 12px;
+}
+
+h1.mainhead {
   float: center;
   padding-left: 150px;
-  padding-top: 10px;
 }
 
 a.mainhead {
-  display: inline;
   float: right;
-  padding-right: 10px;
+  padding-right: 12px;
   cursor: pointer;
 }
 
 img.logo {
-  padding-top: 10px;
   max-height: 70px;
 }
 
 /*SIDEBAR*/
 span.bmenu {
   float: left;
-  padding-top: 12px;
   padding-left: 12px;
   cursor: pointer;
   font-size: 45px;
