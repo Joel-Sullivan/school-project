@@ -70,6 +70,7 @@ h1.mainhead {
   display: inline;
   float: center;
   padding-left: 150px;
+  padding-top: 10px;
 }
 
 a.mainhead {
