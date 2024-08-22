@@ -115,6 +115,7 @@ img.logo {
 /*SIDEBAR*/
 span.bmenu {
   float: left;
+  padding-top: 12px;
   padding-left: 12px;
   cursor: pointer;
   font-size: 45px;
