@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* || RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* || GENERAL STYLES */
+html {
+  scroll-behavior: smooth;
+}
+
+/*THEMES*/
+body.defaultTheme {
+  background-image: radial-gradient(whitesmoke, #475569);
+}
+
+body {
+  font: 1.5rem "Nunito", sans-serif;
+  min-height: 100vh;
+  background-color: #475569;
+  display: flex;
+  flex-direction: column;
+}
+
+h1.mainhead {
+  display: inline;
+  float: center;
+  padding-left: 150px;
+}
+
+a.mainhead {
+  display: inline;
+  float: right;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+img.logo {
+  padding-top: 10px;
+  max-height: 70px;
+}
+
+/*SIDEBAR*/
+span.bmenu {
+  float: left;
+  padding-top: 12px;
+  padding-left: 12px;
+  cursor: pointer;
+  font-size: 45px;
+} 
+
+.sidebar a.closebtn {
+  display: inline-block;
+}
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 300px; /* Initial width for desktop view */
+  background-color: #0e0e0e;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  transform: translateX(-200%); /* Start hidden by translating out of view */
+  transition: all 0.3s ease;
+}
+
+.sidebar.show {
+  transform: translateX(0); /* Slide back to original position */
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: rgb(208, 208, 208);
+  padding: 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #252525;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+/*div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}*/
+
+.pagehead {
+  padding-top: 20px;
+  padding-left: 20px;
+  align-items: center;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    transform: translateY(-200%); /* For topbar effect */
+  }
+  .sidebar:not(.show) {
+    transition: ease 0.3s;
+    display: flex;
+  }
+
+  header {
+    z-index: 999;
+    top: 0;
+  }
+
+  .sidebar a {
+    float: center;
+    text-align: center;
+    display: block; 
+  }
+
+  .sidebar.show {
+    transform: translateY(0); /* Slide back to original position */
+  }
+  
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+header,
+footer {
+  position: sticky;
+  background-color: #1e293b;
+  color: whitesmoke;
+  text-align: center;
+}
+
+header {
+  top: 0;
+  display: inline-block;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+footer {
+  bottom: 0;
+}
+
+/* Profile Card */
+.card {
+  scroll-margin-top: 8rem;
+  width: min(100%, 350px);
+  background-color: #cbd5e1;
+  border: 2px solid #000;
+  border-radius: 15px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card figure{
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.card img {
+  border: 5px double #333;
+  border-radius: 50%;
+}
+
+.card figcaption {
+  font-weight: bolder;
+  font-size: 2rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.prof-name {
+  font-family: "Oswald", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.quote {
+  color: #000;
+}
+
+
+/* || SMALL */
+@media screen and (min-width: 576px) {
+  main {
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 1rem;
+  }
+  .card {
+    width:min(100%, 400px);
+  }
+
+  .card:last-child {
+    order: -1;
+  }
+}
+
+/* || MEDIUM */
+@media screen and (min-width: 768px) {
+  nav {
+    display: none;
+  }
+  
+  .card {
+    width: min(100%, 325px);
+  }
+
+  .card figure {
+    flex-flow: column-reverse;
+  }
+
+  .card figcaption {
+    margin: 0.1em 0;
+  }
+
+  .card p {
+    margin-top: 1rem
+  }
+}
+
+/* || LARGE */
+@media screen and (min-width: 992px) {
+  .card {
+    width: min(100%, 400px);
+  }
+
+  .card:nth-child(2){
+    order: -1;
+  }
+}
+
+/* || XL  */
+@media screen and (min-width: 1200px) {
+  .card {
+    width: min(calc(33% - 1rem),500px);
+  }
+}
+
+/* || MOBILE DEVICE LANDSCAPE  */
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
+  h1,
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    display: none;
+  }
+}
+
+img.profile {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    border-color: aliceblue;
+    border-width: 3px;
+    border-style: solid;
+}
+
+
+
+/*UTILITY CLASSES*/
+.nowrap {
+    white-space: nowrap;
+}
