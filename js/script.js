@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
       fetch('sidebar.html')
           .then(response => response.text())
           .then(data => {
-              var sidebarContainer = document.getElementById('sidebar-container');
+              var sidebarContainer = document.getElementById('sidebar');
               sidebarContainer.innerHTML = '';
               sidebarContainer.innerHTML = data;
 
