@@ -201,6 +201,13 @@ span.bmenu {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  img.logo {
+    display: none;
+  }
+}
+
+
 header,
 footer {
   position: sticky;
@@ -315,12 +322,6 @@ footer {
 
   .card:nth-child(2){
     order: -1;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  img.logo {
-    display: none;
   }
 }
 
