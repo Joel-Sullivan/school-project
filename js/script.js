@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
           .then(response => response.text())
           .then(data => {
               var sidebarContainer = document.getElementById('sidebar');
-              sidebarContainer.innerHTML = '';
               sidebarContainer.innerHTML = data;
 
               var menuButton = document.getElementById('navbtn');
