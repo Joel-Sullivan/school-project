@@ -41,6 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
   // Attach the toggleTheme function to the button
   var themeToggleButton = document.getElementById('theme-toggle');
   if (themeToggleButton) {
-      themeToggleButton
+    themeToggleButton.addEventListener('click', toggleTheme);
   }
 });
