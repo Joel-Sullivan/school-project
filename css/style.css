@@ -24,7 +24,7 @@ html {
   --text-color: #000;
   --header-bg-color: royalblue;
   --header-text-color: lightyellow;
-  --sidebar-bg-color: #5574e2;
+  --sidebar-bg-color: #3b5ac6;
   --sidebar-text-color: white;
   --sidebar-active-bg-color: #04AA6D;
   --sidebar-active-text-color: white;
@@ -43,11 +43,11 @@ html {
   --pagehead-color: #e5e7eb;
   --header-bg-color: #0f172a;
   --header-text-color: #e5e7eb;
-  --sidebar-bg-color: #0f172a;
+  --sidebar-bg-color: #0b1222;
   --sidebar-text-color: #e5e7eb;
   --sidebar-active-bg-color: #06b6d4;
   --sidebar-active-text-color: #0f172a;
-  --sidebar-hover-bg-color: #334155;
+  --sidebar-hover-bg-color: #232d3c;
   --sidebar-hover-text-color: #e5e7eb;
   --card-bg-color: #475569;
   --card-border-color: #e5e7eb;
@@ -86,7 +86,7 @@ html {
   --text-color: #000000; /* White text for readability */
   --header-bg-color: #0096d6; /* Sportacus's main color */
   --header-text-color: #ffffff; /* White text for contrast */
-  --sidebar-bg-color: #0096d6; /* Sportacus's main color */
+  --sidebar-bg-color: #0089c3; /* Sportacus's main color */
   --sidebar-text-color: #ffffff; /* White text for readability */
   --sidebar-active-bg-color: #00bfff; /* Light blue for active items */
   --sidebar-active-text-color: #ffffff; /* White text for contrast */
@@ -107,11 +107,11 @@ html {
   --text-color: #000000; /* White text for readability */
   --header-bg-color: #3b0a45; /* Dark purple for header */
   --header-text-color: #ffffff; /* White text for contrast */
-  --sidebar-bg-color: #3b0a45; /* Dark purple for sidebar */
+  --sidebar-bg-color: #32093a; /* Dark purple for sidebar */
   --sidebar-text-color: #ffffff; /* White text for readability */
   --sidebar-active-bg-color: #8a2b6f; /* Lightened purple for active items */
   --sidebar-active-text-color: #ffffff; /* White text for contrast */
-  --sidebar-hover-bg-color: #5e1a62; /* Slightly lighter purple for hover */
+  --sidebar-hover-bg-color: #4f1652; /* Slightly lighter purple for hover */
   --sidebar-hover-text-color: #ffffff; /* White text for readability */
   --card-bg-color: #8a2b6f; /* Light purple background */
   --card-border-color: #3b0a45; /* Dark border for contrast */
