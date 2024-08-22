@@ -98,6 +98,8 @@ main {
 h1.mainhead {
   float: center;
   padding-left: 150px;
+  font-size: 50px;
+  text-align: center;
 }
 
 a.mainhead {
