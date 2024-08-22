@@ -13,17 +13,56 @@ html {
   scroll-behavior: smooth;
 }
 
-/*THEMES*/
-body.defaultTheme {
-  background-image: radial-gradient(whitesmoke, #475569);
+/*--------THEMES--------*/
+:root {
+  /* Default Theme */
+  --bg-color: radial-gradient(whitesmoke, #475569);
+  --font-family: "Nunito", sans-serif;
+  --text-color: #000;
+  --header-bg-color: #1e293b;
+  --header-text-color: whitesmoke;
+  --sidebar-bg-color: #0e0e0e;
+  --sidebar-text-color: rgb(208, 208, 208);
+  --sidebar-active-bg-color: #04AA6D;
+  --sidebar-active-text-color: white;
+  --sidebar-hover-bg-color: #252525;
+  --sidebar-hover-text-color: white;
+  --card-bg-color: #cbd5e1;
+  --card-border-color: #000;
+  --card-border-radius: 15px;
+  --profile-img-border-color: aliceblue;
+  --footer-bg-color: #1e293b;
+  --footer-text-color: whitesmoke;
 }
 
+/* Dark Theme */
+:root.dark-theme {
+  --bg-color: radial-gradient(#1e293b, #0f172a);
+  --text-color: #e5e7eb;
+  --header-bg-color: #0f172a;
+  --header-text-color: #e5e7eb;
+  --sidebar-bg-color: #0f172a;
+  --sidebar-text-color: #e5e7eb;
+  --sidebar-active-bg-color: #06b6d4;
+  --sidebar-active-text-color: #0f172a;
+  --sidebar-hover-bg-color: #334155;
+  --sidebar-hover-text-color: #e5e7eb;
+  --card-bg-color: #475569;
+  --card-border-color: #e5e7eb;
+  --profile-img-border-color: #64748b;
+  --footer-bg-color: #0f172a;
+  --footer-text-color: #e5e7eb;
+}
+
+/*--------STYLES--------*/
 body {
-  font: 1.5rem "Nunito", sans-serif;
+  background-image: var(--bg-color);
+  font: 1.5rem var(--font-family);
   min-height: 100vh;
-  background-color: #475569;
+  background-color: #000;
   display: flex;
   flex-direction: column;
+  color: var(--text-color);
 }
 
 h1.mainhead {
@@ -57,49 +96,41 @@ span.bmenu {
   display: inline-block;
 }
 .sidebar {
+  background-color: var(--sidebar-bg-color);
   margin: 0;
   padding: 0;
-  width: 300px; /* Initial width for desktop view */
-  background-color: #0e0e0e;
+  width: 300px;
   position: fixed;
   height: 100%;
   overflow: auto;
-  transform: translateX(-200%); /* Start hidden by translating out of view */
+  transform: translateX(-200%);
   transition: all 0.3s ease;
 }
 
 .sidebar.show {
-  transform: translateX(0); /* Slide back to original position */
+  transform: translateX(0);
 }
 
 /* Sidebar links */
 .sidebar a {
+  color: var(--sidebar-text-color);
   display: block;
-  color: rgb(208, 208, 208);
   padding: 16px;
   text-decoration: none;
   transition: 0.3s;
-  
 }
 
 /* Active/current link */
 .sidebar a.active {
-  background-color: #04AA6D;
-  color: white;
+  background-color: var(--sidebar-active-bg-color);
+  color: var(--sidebar-active-text-color);
 }
 
 /* Links on mouse-over */
 .sidebar a:hover:not(.active) {
-  background-color: #252525;
-  color: white;
+  background-color: var(--sidebar-hover-bg-color);
+  color: var(--sidebar-hover-text-color);
 }
-
-/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
-/*div.content {
-  margin-left: 200px;
-  padding: 1px 16px;
-  height: 1000px;
-}*/
 
 .pagehead {
   padding-top: 20px;
@@ -113,7 +144,7 @@ span.bmenu {
     width: 100%;
     height: auto;
     position: relative;
-    transform: translateY(-200%); /* For topbar effect */
+    transform: translateY(-200%);
   }
   .sidebar:not(.show) {
     transition: ease 0.3s;
@@ -132,9 +163,8 @@ span.bmenu {
   }
 
   .sidebar.show {
-    transform: translateY(0); /* Slide back to original position */
+    transform: translateY(0);
   }
-  
 }
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
@@ -148,8 +178,8 @@ span.bmenu {
 header,
 footer {
   position: sticky;
-  background-color: #1e293b;
-  color: whitesmoke;
+  background-color: var(--header-bg-color);
+  color: var(--header-text-color);
   text-align: center;
 }
 
@@ -175,9 +205,9 @@ footer {
 .card {
   scroll-margin-top: 8rem;
   width: min(100%, 350px);
-  background-color: #cbd5e1;
-  border: 2px solid #000;
-  border-radius: 15px;
+  background-color: var(--card-bg-color);
+  border: 2px solid var(--card-border-color);
+  border-radius: var(--card-border-radius);
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -190,7 +220,7 @@ footer {
 }
 
 .card img {
-  border: 5px double #333;
+  border: 5px double var(--card-border-color);
   border-radius: 50%;
 }
 
@@ -209,9 +239,8 @@ footer {
 }
 
 .quote {
-  color: #000;
+  color: var(--text-color);
 }
-
 
 /* || SMALL */
 @media screen and (min-width: 576px) {
@@ -248,7 +277,7 @@ footer {
   }
 
   .card p {
-    margin-top: 1rem
+    margin-top: 1rem;
   }
 }
 
@@ -283,18 +312,16 @@ footer {
 }
 
 img.profile {
-    display: block;
-    max-width: 100%;
-    object-fit: cover;
-    border-radius: 25px;
-    border-color: aliceblue;
-    border-width: 3px;
-    border-style: solid;
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+  border-color: var(--profile-img-border-color);
+  border-width: 3px;
+  border-style: solid;
 }
-
-
 
 /*UTILITY CLASSES*/
 .nowrap {
-    white-space: nowrap;
+  white-space: nowrap;
 }
