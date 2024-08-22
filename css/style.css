@@ -83,7 +83,7 @@ html {
   --head-font: "Bungee", sans-serif;
   --body-font: "Fira Sans", sans-serif;
   --pagehead-color: #0096d6; /* Sportacus's main color */
-  --text-color: #ffffff; /* White text for readability */
+  --text-color: #000000; /* White text for readability */
   --header-bg-color: #0096d6; /* Sportacus's main color */
   --header-text-color: #ffffff; /* White text for contrast */
   --sidebar-bg-color: #0096d6; /* Sportacus's main color */
@@ -104,7 +104,7 @@ html {
   --head-font: "Bungee", sans-serif;
   --body-font: "Fira Sans", sans-serif;
   --pagehead-color: #3b0a45; /* Robbie's dark color */
-  --text-color: #ffffff; /* White text for readability */
+  --text-color: #000000; /* White text for readability */
   --header-bg-color: #3b0a45; /* Dark purple for header */
   --header-text-color: #ffffff; /* White text for contrast */
   --sidebar-bg-color: #3b0a45; /* Dark purple for sidebar */
