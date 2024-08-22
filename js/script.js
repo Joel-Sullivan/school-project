@@ -2,7 +2,7 @@ function loadSidebar() {
     fetch('sidebar.html')
         .then(response => response.text())
         .then(data => {
-            document.getElementById('sidebar-container').innerHTML = data;
+            document.getElementById('sidebar').innerHTML = data;
             // Initialize toggleNav after loading the sidebar
             var menuButton = document.getElementById('navbtn');
             if (menuButton) {
