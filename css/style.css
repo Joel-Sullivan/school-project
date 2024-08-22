@@ -58,7 +58,8 @@ html {
 
 /* Stephanie's Theme */
 :root.stephanie-theme {
-  --bg-color: url(images/stephaniebg.jpg); /* Stephanie's costume colors */
+  --bg-image: url(../images/stephanie-bg.jpg); /* Stephanie's costume colors */
+  --bg-color: radial-gradient(#ff61e2, #ffb6ff);
   --head-font: "Bungee", sans-serif;
   --body-font: "Fira Sans", sans-serif;
   --pagehead-color: #e13cb3; /* Matching header color */
@@ -122,7 +123,8 @@ html {
 
 /*--------STYLES--------*/
 body {
-  background-image: var(--bg-color);
+  background-image: var(--bg-image);
+  background-color: var(--bg-color);
   font-family: var(--body-font);
   min-height: 100vh;
   background-color: #000;
