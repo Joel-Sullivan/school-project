@@ -130,7 +130,6 @@ html {
 
 /*--------STYLES--------*/
 body {
-  background-color: var(--bg-color);
   font-family: var(--body-font);
   min-height: 100vh;
   background-color: #000;
