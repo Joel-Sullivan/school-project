@@ -99,7 +99,7 @@ html {
 :root.robbie-rotten-theme {
   --bg-image: url(images/backgrounds/robbie-bg.jpg);
   --bg-color: radial-gradient(#3b0a45, #8a2b6f);
-  --pagehead-color: #3b0a45;
+  --pagehead-color: #fff;
   --text-color: #000;
   --header-bg-color: #3b0a45;
   --header-text-color: #ffffff;
