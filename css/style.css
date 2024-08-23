@@ -311,8 +311,8 @@ span.bmenu {
 }
 
 .card img.profile-pic {
-  width: 150px; /* Set the width of the images */
-  height: 150px; /* Set the height of the images */
+  width: 200px; /* Set the width of the images */
+  height: 200px; /* Set the height of the images */
   object-fit: cover; /* Ensures the image covers the area without distortion */
   border-radius: 50%; /* Makes the images circular */
   border: 3px solid var(--profile-img-border-color); /* Border around the image */
