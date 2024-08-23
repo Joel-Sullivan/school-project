@@ -17,7 +17,7 @@ html {
 /*--------THEMES--------*/
 :root {
   /* Default Theme */
-  --bg-color: radial-gradient(royalblue, skyblue);
+  --bg-image: radial-gradient(royalblue, skyblue);
   --head-font: "Bungee", sans-serif;
   --body-font: "Fira Sans", sans-serif;
   --pagehead-color: darkblue;
@@ -39,7 +39,7 @@ html {
 
 /* Dark Theme */
 :root.dark-theme {
-  --bg-color: radial-gradient(#1e293b, #0f172a);
+  --bg-image: radial-gradient(#1e293b, #0f172a);
   --text-color: #black;
   --pagehead-color: #e5e7eb;
   --header-bg-color: #0f172a;
@@ -130,6 +130,7 @@ html {
 
 /*--------STYLES--------*/
 body {
+  background-image: var(--bg-image);
   font-family: var(--body-font);
   min-height: 100vh;
   background-color: #000;
