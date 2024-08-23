@@ -26,7 +26,7 @@ html {
   --header-text-color: lightyellow;
   --sidebar-bg-color: #3b5ac6;
   --sidebar-text-color: white;
-  --sidebar-active-bg-color: #04AA6D;
+  --sidebar-active-bg-color: #ffffff;
   --sidebar-active-text-color: white;
   --sidebar-hover-bg-color: #4668e0;
   --sidebar-hover-text-color: yellow;
@@ -70,7 +70,7 @@ html {
   --header-text-color: #ffffff; /* White text for contrast */
   --sidebar-bg-color: #f557dd; /* Stephanie's costume color */
   --sidebar-text-color: #ffcbf8; /* White text for readability */
-  --sidebar-active-bg-color: #ff88fb; /* Lightened version for active items */
+  --sidebar-active-bg-color: #ffd6f6; /* Lightened version for active items */
   --sidebar-active-text-color: #2b2b2b; /* Dark text for contrast */
   --sidebar-hover-bg-color: #ff8cec; /* Slightly darker for hover */
   --sidebar-hover-text-color: #ffffff; /* White text for readability */
@@ -93,7 +93,7 @@ html {
   --header-text-color: #ffffff; /* White text for contrast */
   --sidebar-bg-color: #0089c3; /* Sportacus's main color */
   --sidebar-text-color: #ffffff; /* White text for readability */
-  --sidebar-active-bg-color: #00bfff; /* Light blue for active items */
+  --sidebar-active-bg-color: #bdeeff; /* Light blue for active items */
   --sidebar-active-text-color: #ffffff; /* White text for contrast */
   --sidebar-hover-bg-color: #007acc; /* Darker blue for hover */
   --sidebar-hover-text-color: #ffffff; /* White text for readability */
@@ -116,7 +116,7 @@ html {
   --header-text-color: #ffffff; /* White text for contrast */
   --sidebar-bg-color: #32093a; /* Dark purple for sidebar */
   --sidebar-text-color: #ffffff; /* White text for readability */
-  --sidebar-active-bg-color: #8a2b6f; /* Lightened purple for active items */
+  --sidebar-active-bg-color: #ff96e1; /* Lightened purple for active items */
   --sidebar-active-text-color: #ffffff; /* White text for contrast */
   --sidebar-hover-bg-color: #4f1652; /* Slightly lighter purple for hover */
   --sidebar-hover-text-color: #ffffff; /* White text for readability */
