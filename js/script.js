@@ -43,7 +43,6 @@ document.addEventListener('DOMContentLoaded', function() {
           document.body.style.backgroundImage = ''; // Clear background image
         }
       }
-    }
 
     function saveTheme(themeName) {
         localStorage.setItem('theme', themeName);
