@@ -34,7 +34,7 @@ html {
   --card-border-color: #000;
   --card-border-radius: 15px;
   --profile-img-border-color: #d4d400;
-  background-color: var(--bg-color);
+  background-image: var(--bg-color);
 }
 
 /* Dark Theme */
@@ -55,7 +55,7 @@ html {
   --profile-img-border-color: #64748b;
   --footer-bg-color: #0f172a;
   --footer-text-color: #e5e7eb;
-    background-color: var(--bg-color);
+    background-image: var(--bg-color);
 }
 
 /* Stephanie's Theme */
