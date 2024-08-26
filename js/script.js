@@ -10,12 +10,12 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Load Sidebar Function
-  function loadSidebar() {
-      fetch('sidebar.html')
+  function loadTools() {
+      fetch('tools.html')
           .then(response => response.text())
           .then(data => {
-              var sidebarContainer = document.getElementById('sidebar');
-              sidebarContainer.innerHTML = data;
+              var headContainer = document.getElementById('tools');
+              headContainer.innerHTML = data;
 
               var menuButton = document.getElementById('navbtn');
               if (menuButton) {
@@ -27,10 +27,10 @@ document.addEventListener('DOMContentLoaded', function() {
                   closeButton.addEventListener('click', toggleNav);
               }
           })
-          .catch(error => console.error('Error loading sidebar:', error));
+          .catch(error => console.error('Error loading Navbar + Pagehead:', error));
   }
 
-  loadSidebar(); // Load sidebar when DOM content is loaded
+  loadTools(); // Load sidebar when DOM content is loaded
 
   //Themes
     function applyTheme(themeName) {
