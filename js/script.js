@@ -66,16 +66,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     document.addEventListener('DOMContentLoaded', () => {
-      const toggleMenuButton = document.querySelector('.toggle-menu');
-      const themeMenu = document.querySelector('.theme-menu');
-      const closeMenuButton = document.querySelector('.close-menu');
-  
-      toggleMenuButton.addEventListener('click', () => {
-          themeMenu.classList.toggle('active');
-      });
-  
-      closeMenuButton.addEventListener('click', () => {
-          themeMenu.classList.remove('active');
-      });
-  });
+      const toggleMenuBtn = document.getElementById('toggle-menu-btn');
+      const themeMenu = document.getElementById('theme-menu');
+      const closeMenuBtn = document.getElementById('close-menu-btn');
+
+    toggleMenuBtn.addEventListener('click', () => {
+        themeMenu.classList.toggle('active');
+    });
+
+    closeMenuBtn.addEventListener('click', () => {
+        themeMenu.classList.remove('active');
+    });
+});
 });
