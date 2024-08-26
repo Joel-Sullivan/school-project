@@ -65,4 +65,17 @@ document.addEventListener('DOMContentLoaded', function() {
             saveTheme(selectedTheme);
         });
     });
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggleMenuButton = document.querySelector('.toggle-menu');
+      const themeMenu = document.querySelector('.theme-menu');
+      const closeMenuButton = document.querySelector('.close-menu');
+  
+      toggleMenuButton.addEventListener('click', () => {
+          themeMenu.classList.toggle('active');
+      });
+  
+      closeMenuButton.addEventListener('click', () => {
+          themeMenu.classList.remove('active');
+      });
+  });
 });
