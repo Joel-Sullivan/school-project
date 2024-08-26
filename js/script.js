@@ -65,17 +65,16 @@ document.addEventListener('DOMContentLoaded', function() {
             saveTheme(selectedTheme);
         });
     });
-    document.addEventListener('DOMContentLoaded', () => {
-      const toggleMenuBtn = document.getElementById('toggle-menu-btn');
-      const themeMenu = document.getElementById('theme-menu');
-      const closeMenuBtn = document.getElementById('close-menu-btn');
-
-    toggleMenuBtn.addEventListener('click', () => {
-        themeMenu.classList.toggle('active');
+    document.addEventListener('DOMContentLoaded', function() {
+        const themeMenuButton = document.querySelector('.theme-menu-button');
+        const themeMenu = document.querySelector('.theme-menu');
+        
+        themeMenuButton.addEventListener('click', function() {
+            if (themeMenu.style.height === '0px' || !themeMenu.style.height) {
+                themeMenu.style.height = '200px'; // Adjust height to fit your content
+            } else {
+                themeMenu.style.height = '0px';
+            }
+        });
     });
-
-    closeMenuBtn.addEventListener('click', () => {
-        themeMenu.classList.remove('active');
-    });
-});
 });
