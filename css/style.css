@@ -464,126 +464,29 @@ footer p {
     z-index: 1001; /* Ensure it is above the footer */
 }
 
-footer button.toggle-menu:hover {
+.theme-menu-button:hover {
     background-color: var(--sidebar-hover-bg-color);
     color: var(--sidebar-hover-text-color);
 }
 
-/* Theme menu styles */
-
-To ensure the theme menu button is aligned to the right side of the footer and not centered, you need to make sure its CSS rules reflect the correct alignment and positioning. Here's how you can adjust your CSS:
-
-CSS Adjustments
-Ensure the Button is Positioned Correctly: Set the position to fixed and right to 0 to align it to the right side of the footer.
-
-Check Footer Alignment: Make sure the footer does not interfere with the positioning of the button.
-
-Verify Button Alignment: Ensure that the button itself is not centered by default.
-
-Updated CSS
-css
-Copy code
-/* Adjust the footer styles */
-footer {
-    background-color: var(--header-bg-color);
-    color: var(--header-text-color);
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%; /* Ensure it spans the full width */
-    z-index: 1000; /* Ensure it’s above other elements */
-}
-
-/* Ensure theme-menu button is aligned to the right of the footer */
-.theme-menu-button {
-    position: fixed;
-    bottom: 1rem; /* Adjust as needed for spacing from the bottom */
-    right: 1rem; /* Align to the right edge of the viewport */
-    background-color: var(--header-bg-color);
-    color: var(--header-text-color);
-    border: none;
-    border-radius: 50%;
-    width: 50px; /* Adjust size as needed */
-    height: 50px; /* Adjust size as needed */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
-    z-index: 1001; /* Ensure it is above the footer */
-}
-
-/* Styles for the theme menu */
-.theme-menu {
-    position: fixed;
-    bottom: 60px; /* Adjust this value to position the menu above the footer */
-    right: 0;
-    background-color: var(--header-bg-color);
-    color: var(--header-text-color);
-    width: 250px;
-    height: 0;
-    overflow: hidden;
-    transition: height 0.3s ease;
-    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px 10px 0 0;
-    z-index: 1001; /* Ensure it is above the footer */
-}
-
-/* Button icon styles */
-.theme-menu-button i {
-    font-size: 24px; /* Adjust icon size as needed */
-    color: var(--header-text-color);
-}
-
-html, body {
-    height: 100%;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-.theme-menu.active {
-    height: 200px; /* Set this to the height you want when open */
-}
-
-.theme-menu .close-menu {
-    background: none;
-    border: none;
-    color: var(--sidebar-text-color);
-    font-size: 1.5rem;
-    font-weight: bold;
-    cursor: pointer;
-    position: absolute;
-    top: 5px;
-    right: 10px;
-}
-
-.theme-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 20px;
-    margin-top: 30px;
-}
-
-.theme-button {
-    background-color: var(--sidebar-bg-color);
-    color: var(--sidebar-text-color);
-    border: 2px solid var(--card-border-color);
+.theme-menu button {
+    display: block;
+    width: 100%;
     padding: 10px;
-    border-radius: 10px;
-    font-family: var(--body-font);
+    background: transparent;
+    border: none;
+    color: var(--header-text-color);
+    text-align: left;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
 }
 
-.theme-button:hover {
-    background-color: var(--sidebar-hover-bg-color);
-    color: var(--sidebar-hover-text-color);
+/* Close button styles */
+.theme-menu-button-close {
+    background: var(--header-bg-color);
+    border: none;
+    color: var(--header-text-color);
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
 }
-
-
