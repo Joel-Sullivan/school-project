@@ -423,3 +423,75 @@ span.bmenu {
     padding: 0.5rem;
     font-family: var(--body-font);
 }
+
+footer button.toggle-menu {
+    background-color: var(--sidebar-bg-color);
+    color: var(--sidebar-text-color);
+    border: 2px solid var(--card-border-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: var(--body-font);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+footer button.toggle-menu:hover {
+    background-color: var(--sidebar-hover-bg-color);
+    color: var(--sidebar-hover-text-color);
+}
+
+/* Theme menu styles */
+.theme-menu {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
+    width: 250px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px 10px 0 0;
+    z-index: 1001;
+}
+
+.theme-menu.active {
+    height: 200px; /* Set this to the height you want when open */
+}
+
+.theme-menu .close-menu {
+    background: none;
+    border: none;
+    color: var(--sidebar-text-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.theme-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.theme-button {
+    background-color: var(--sidebar-bg-color);
+    color: var(--sidebar-text-color);
+    border: 2px solid var(--card-border-color);
+    padding: 10px;
+    border-radius: 10px;
+    font-family: var(--body-font);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-button:hover {
+    background-color: var(--sidebar-hover-bg-color);
+    color: var(--sidebar-hover-text-color);
+}
